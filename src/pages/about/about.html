@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add Person
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Employee ID</ion-label>
+      <ion-input type="text" [(ngModel)]="employeeId"></ion-input>
+    </ion-item>
+      <ion-item>
+        <ion-label floating>First Nane</ion-label>
+        <ion-input type="text" [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Last Nane</ion-label>
+        <ion-input type="text" [(ngModel)]="lname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Job title</ion-label>
+        <ion-input type="text" [(ngModel)]="job"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>AGE</ion-label>
+        <ion-input type="text" [(ngModel)]="age"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button large full (click)="createEmployee(name,lname,age,job,employeeId)">ADD  <ion-icon name="add"></ion-icon></button>
+      </ion-item>
+
+    </ion-list>
+</ion-content>

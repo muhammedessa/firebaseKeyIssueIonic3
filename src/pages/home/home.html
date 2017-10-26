@@ -1,0 +1,35 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Persons Database</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ 
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items$   | async json">
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/lm.jpg">
+        </ion-avatar>
+        <h2> key = {{item.payload.key}}</h2>
+        <h2>{{item.payload.val().name}}</h2>
+        <h3>{{item.payload.val().lname}}</h3>
+        <p>{{item.payload.val().job}}  -  {{item.payload.val().age}}</p>
+        <ion-note>{{item.payload.val().employeeId}}</ion-note>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+          <ion-icon ios="ios-settings" md="md-settings"></ion-icon>
+          Edit
+        </button>
+        <button ion-button color="danger" (click)="deleteEmployee(item.payload.key)">
+          <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+          Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
