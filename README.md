@@ -1,28 +1,30 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+fixing issue that occur when we want to get $key from firebase realtime database 
 
-## How to use this template
+this project build using   Ionic 3 angular 4 
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+please first clone this project then use : npm install in terminal or CMD according to your OS
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+to run this project just type : ionic serve
 
-### With the Ionic CLI:
+go to directory : firebaseKeyIssueIonic3/src/pages/home/
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+you will find home.html and home.ts 
+include all codes that you will need to get $key from firebase 
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
+![2017-10-26_21-35-07](https://github.com/muhammedessa/firebaseKeyIssueIonic3/blob/master/2017-10-26_21-35-07.png)
+ 
+![Screenshot](https://github.com/muhammedessa/firebaseKeyIssueIonic3/blob/master/2017-10-26_21-35-07.png)
 
-Then, to run it, cd into `myTabs` and run:
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
 
-Substitute ios for android if not on a Mac.
 
-# firebaseKeyIssueIonic3
+
+thanks to Alaa Mishlab from code for Basra he rised this issue 
+more info github account :
+https://github.com/almishlab8
+
+
+
+
+ 
 # firebaseKeyIssueIonic3
